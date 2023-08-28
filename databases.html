@@ -1,0 +1,272 @@
+<HTML>
+
+
+<!-- 1. Creator -->
+
+<HEAD>
+<!--Created by Craig Paardekooper &#169;(2021)-->
+</HEAD>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<!--  2. STYLES-->
+
+<style type="text/css">
+body {
+    font: normal 14px Verdana, Arial, sans-serif;
+}
+table {
+            border-spacing: 0px;
+            table-layout: fixed;
+            margin-left: auto;
+            margin-right: auto;
+        }
+.auto-style1 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: left;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+
+.auto-style3 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+.auto-style4 {
+	background-color: #FFFF00;
+}
+.auto-style5 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background-color: #FFFF00;
+}
+
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+
+.success {color: green;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
+</style>
+
+
+
+
+<!--3.  BROWSER TITLE -->
+
+<TITLE>Vaccine Databases
+</TITLE>
+
+
+
+
+<!--4. JAVA SCRIPT SEARCH FUNCTION -->
+
+<script>
+function searchSname() {
+    var input, filter, found, table, tr, td, i, j;
+var targetId = "";
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                found = true;
+targetId = td[j].parentNode.id;
+td[j].style.backgroundColor = "yellow";
+document.getElementById(targetId).scrollIntoView();
+
+         break;
+
+            } 
+        }
+        if (found) {
+            tr[i].style.display = "";
+            found = false;
+
+        } else {
+            tr[i].style.display = "none";
+
+        }
+    }
+}
+
+
+
+
+function refresh() {
+    var input;
+
+    input = document.getElementById("myInput");
+if (input.value.length == 0){
+reloadpage();
+
+} 
+}
+
+
+<!--5.  JAVASCRIPT RELOAD PAGE FUNCTION -->
+
+function reloadpage(){
+window.location.href = window.location.href;
+document.getElementById("myInput").focus();
+document.getElementById("myInput").select();
+
+
+
+}
+
+
+
+
+<!--  JAVASCRIPT SET LABEL TEXT -->
+function notfound() {
+document.getElementById('label1').innerHTML = 'Your batch code is not in the top 1000 most toxic';
+}
+</script>
+
+
+
+
+<BODY>
+
+
+
+
+
+
+
+
+
+<!-- 7. SUB HEADING -->
+
+<FONT FACE="arial,verdana,helvetica" size="+2" color="black">
+<b>Vaccine Databases </b></font><br><br>
+
+
+<!-- NAVIGATION BAR -->
+
+<p>
+<font size="-1">
+<a href="index.html">home</a>&emsp;| &emsp;
+<a href="boosters.html">Booster Warnings by Month</a>&emsp; | &emsp;
+<a href="moderna.html">Moderna</a>&emsp; | &emsp;
+<a href="pfizer.html">Pfizer</a>&emsp; | &emsp;
+<a href="janssen.html">Janssen</a>&emsp; | &emsp;
+<a href="modernaforeigndeaths.html">Moderna (outside USA)</a>&emsp; | &emsp;
+<a href="pfizerforeigndeaths.html">Pfizer (outside USA)</a>&emsp; | &emsp;
+<a href="janssenforeigndeaths.html">Janssen (outside USA)</a>&emsp; | &emsp;
+<a href="combined.html">Severe</a>&emsp; | &emsp;
+<a href="children.html">Children</a>&emsp; | &emsp;
+<a href="clusters.html">Clusters</a>&emsp; | &emsp;
+<a href="allnothing.html">All or Nothing</a>&emsp; | &emsp;
+<a href="time.html">Time till onset</a>&emsp; | &emsp;
+<a href="geography.html">Geography</a>&emsp; | &emsp;
+<a href="connections.html">Causality</a>&emsp; | &emsp;
+<a href="video.html">Video Library</a>&emsp; | &emsp;
+<a href="casereports.html">Case Reports</a>&emsp; | &emsp;
+<a href="lotsize.html">Lot Sizes</a>&emsp; | &emsp;
+<a href="expiry.html">Lot Expiry Dates</a>&emsp; | &emsp;
+<a href="datacleaning.html">Data Cleaning</a>&emsp; | &emsp;
+<a href="databases.html">Vaccine Databases</a>&emsp; | &emsp;
+<a href="background.html">Background</a>&emsp; | &emsp;
+<a href="craig.zip" >Download Source Code</a>&emsp; | &emsp;
+<a href="donatecreditcard.html">Donate</a>
+</font></p><br>
+
+<P><B><font color="red">If this site is slow loading that's because over 1 million people are accessing it right now. Please use auxillary site <a href="https://www.howbadismybatch.com">HowBadisMyBatch.com<a> which has been set up to cope with this overload. Thankyou.</font></b></p><br>
+
+
+
+
+
+
+<!-- 8. WARNING -->
+
+<a href="donatecreditcard.html"><b>Donate</b></a></p><br>
+   
+
+<P><b>Vaccine Databases</b></p>
+<ul>
+<li><b>USA</b><a href="pfizerseptdec21.xlsx">USA : Pfizer Batches : Vaccination Date between September 13th 2021 to December 14th 2021</a></li><br>
+<li><b>Japan</b><a href="modernaseptdec21.xlsx">USA : Moderna Batches : Vaccination Date between September 13th 2021 to December 14th 2021</a></li><br>
+<li><a href="janssenseptdec21.xlsx">USA : Janssen Batches : Vaccination Date between September 13th 2021 to December 14th 2021</a></li>
+</ul></P><br>
+
+
+
+<P><b>Batches distributed in other countries outside of the USA - September 13th 2021 to December 14th 2021</b></p>
+<ul>
+<li><a href="pfizerforeignseptdec21.xlsx">Recent Pfizer Batches Outside USA : Vaccination Date between September 13th 2021 to December 14th 2021</a></li><br>
+<li><a href="modernaforeignseptdec21.xlsx">Recent Moderna Batches Outside USA : Vaccination Date between September 13th 2021 to December 14th 2021</a></li><br>
+<li><a href="janssenforeignseptdec21.xlsx">Recent Janssen Batches Outside USA : Vaccination Date between September 13th 2021 to December 14th 2021</a></li>
+</ul></P><br>
+
+
+
+
+<p>These excel sheets will give you an idea of which batches are currently in circulation, and which ones are associated with the most harm. Some batches appear to be associated with higher rates of disability and death compared to others. </p><br>
+
+<p><b>Doctors and nurses</b> should take this record of harm into account when deciding to administer a vaccine.</P>
+
+<p><b>Members of the public</b> are encouraged to review this information before deciding upon vaccination - so they can exercise informed consent</p>
+
+<P><b>Employers</b> should be cognisant of this information before mandating vaccines upon employees. To knowingly mandate a vaccine where death or disability is a possible adverse reaction may expose an employer to prosecution. </p>
+
+
+
+</body>
+</html

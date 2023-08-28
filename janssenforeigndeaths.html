@@ -1,0 +1,2177 @@
+<HTML>
+
+
+<!-- 1. Creator -->
+
+<HEAD>
+<!--Created by Craig Paardekooper &#169;(2021)-->
+</HEAD>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<!--  2. STYLES-->
+
+<style type="text/css">
+body {
+    font: normal 14px Verdana, Arial, sans-serif;
+}
+
+table {
+            border-spacing: 0px;
+            table-layout: fixed;
+            margin-left: auto;
+            margin-right: auto;
+        }
+.auto-style1 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: left;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+
+.auto-style3 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+.auto-style4 {
+	background-color: #FFFF00;
+}
+.auto-style5 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background-color: #FFFF00;
+}
+
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+
+.success {color: green;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
+</style>
+
+
+
+
+<!--3.  BROWSER TITLE -->
+
+<TITLE>Janssen Outside of USA
+</TITLE>
+
+
+
+
+<!--4. JAVA SCRIPT SEARCH FUNCTION -->
+
+<script>
+function searchSname() {
+    var input, filter, found, table, tr, td, i, j;
+var targetId = "";
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                found = true;
+targetId = td[j].parentNode.id;
+td[j].style.backgroundColor = "yellow";
+document.getElementById(targetId).scrollIntoView();
+
+         break;
+
+            } 
+        }
+        if (found) {
+            tr[i].style.display = "";
+            found = false;
+
+        } else {
+            tr[i].style.display = "none";
+
+        }
+    }
+}
+
+
+
+
+function refresh() {
+    var input;
+
+    input = document.getElementById("myInput");
+if (input.value.length == 0){
+reloadpage();
+
+} 
+}
+
+
+<!--5.  JAVASCRIPT RELOAD PAGE FUNCTION -->
+
+function reloadpage(){
+window.location.href = window.location.href;
+document.getElementById("myInput").focus();
+document.getElementById("myInput").select();
+
+
+
+}
+
+
+
+
+<!--  JAVASCRIPT SET LABEL TEXT -->
+function notfound() {
+document.getElementById('label1').innerHTML = 'Your batch code is not in the top 1000 most toxic';
+}
+</script>
+
+
+
+
+<BODY>
+
+
+
+
+
+
+
+
+
+<!-- 7. SUB HEADING -->
+
+<FONT FACE="arial,verdana,helvetica" size="+2" color="black">
+<b>Janssen - Outside of the USA </b></font><br><br>
+
+
+
+
+<!-- NAVIGATION BAR -->
+
+<p>
+<font size="-1">
+<a href="index.html">home</a>&emsp;| &emsp;
+<a href="boosters.html">Booster Warnings by Month</a>&emsp; | &emsp;
+<a href="moderna.html">Moderna</a>&emsp; | &emsp;
+<a href="pfizer.html">Pfizer</a>&emsp; | &emsp;
+<a href="janssen.html">Janssen</a>&emsp; | &emsp;
+<a href="modernaforeigndeaths.html">Moderna (outside USA)</a>&emsp; | &emsp;
+<a href="pfizerforeigndeaths.html">Pfizer (outside USA)</a>&emsp; | &emsp;
+<a href="janssenforeigndeaths.html">Janssen (outside USA)</a>&emsp; | &emsp;
+<a href="combined.html">Severe</a>&emsp; | &emsp;
+<a href="symptom.html">Symptom</a>&emsp; | &emsp;
+<a href="recovery.html" target="_blank">Treatment</a>&emsp; | &emsp;
+<a href="children.html">Children</a>&emsp; | &emsp;
+<a href="clusters.html">Clusters</a>&emsp; | &emsp;
+<a href="allnothing.html">All or Nothing</a>&emsp; | &emsp;
+<a href="time.html">Time till onset</a>&emsp; | &emsp;
+<a href="gender.html">Gender</a>&emsp; | &emsp;
+<a href="geography.html">Geography</a>&emsp; | &emsp;
+<a href="states.html">States</a>&emsp; | &emsp;
+<a href="connections.html">Causality</a>&emsp; | &emsp;
+<a href="recallsjapan.html">Japan</a>&emsp; | &emsp;
+<a href="sweden.html">Sweden</a>&emsp; | &emsp;
+<a href="video.html">Video Library</a>&emsp; | &emsp;
+<a href="casereports.html">Case Reports</a>&emsp; | &emsp;
+
+<a href="lotsize.html">Lot Sizes</a>&emsp; | &emsp;
+<a href="expiry.html">Lot Expiry Dates</a>&emsp; | &emsp;
+<a href="whistle.html">Whistle Blowers</a>&emsp; | &emsp;
+<a href="datacleaning.html">Data Cleaning</a>&emsp; | &emsp;
+<a href="background.html">Background</a>&emsp; | &emsp;
+<a href="craig.zip" >Download Source Code</a>&emsp; | &emsp;
+<a href="donatecreditcard.html">Donate</a>
+</font></p><br>
+
+<P><B><font color="red">If this site is slow loading that's because over 1 million people are accessing it right now. Please use auxillary site <a href="https://www.howbadismybatch.com">HowBadisMyBatch.com<a> which has been set up to cope with this overload. Thankyou.</font></b></p><br>
+
+
+
+<!-- 8. WARNING -->
+
+<Font color="red" size="-1"><p><b>Health Warning : </b><br><br>
+
+<p>According to data reported in VAERS, reproduced here, adverse events triggered by Janssen batches have varied widely.
+
+<P>70% of the batches are associated with only 1 or 2 deaths per batch, but a small % of the batches appear to be more toxic -  being associated with up to 88 x the number of deaths compared to the less harmful 70% of the batches.</p>
+
+<p>Therefore, members of the public should be wary of the batch they are receiving, and doctors and nurses should ALWAYS check the batch number before administering it, to see of it is associated with an excessive number of deaths </p></font><br><br>
+
+
+
+
+
+
+<b>Check out your Janssen batch code </b></P>
+
+
+
+<!-- 9. INPUT BATCH CODE -->
+
+<form id="searchForm" action="javascript:search();">
+   <div class="input-group">
+      
+      <input type="text" autofocus="autofocus" id='myInput' onkeyup='searchSname()'  oninput='refresh()'  placeholder="Enter Janssen Batch Code"> 
+
+
+
+<button id="reload" class="btn btn-default" type="button" 
+              onclick="reloadpage();">Clear
+      </button> &emsp;&emsp;<a href="donatecreditcard.html"><b>Donate</b></a>
+   </div>
+</form>
+<p><br>
+
+
+
+
+
+
+
+
+<!-- 11. TABLE OF JANSSEN BATCH CODES -->
+<P>
+<table id="Header" border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:800pt" width="800">
+	
+	<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:800pt" width="800">
+	<colgroup>
+		<col span="3" style="width:48pt" width="64" />
+		<col style="mso-width-source:userset;mso-width-alt:4212;width:91pt" width="121" />
+		<col style="mso-width-source:userset;mso-width-alt:6353;width:137pt" width="182" />
+	</colgroup>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt; width: 105pt">
+		BATCH</td>
+		<td class="auto-style1" style="width: 48pt" width="64">ADRs</td>
+		<td class="auto-style1" style="width: 48pt" width="64">DEATHS</td>
+		<td class="auto-style1" style="width: 91pt" width="121">DISABILITIES</td>
+		<td class="auto-style1" style="width: 137pt" width="182">LIFE 
+		THREATENING ILLNESSES</td>
+	</tr>
+</table>
+ 
+<table id='myTable'  border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:800pt" width="800">
+	<colgroup>
+		<col span="3" style="width:48pt" width="64" />
+		<col style="mso-width-source:userset;mso-width-alt:4212;width:91pt" width="121" />
+		<col style="mso-width-source:userset;mso-width-alt:6353;width:137pt" width="182" />
+	</colgroup>
+
+<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt; width: 48pt" width="64">
+		213C21A</td>
+		<td class="auto-style1" style="width:48pt" width="64">433</td>
+		<td class="auto-style1" style="width:48pt" width="64">88</td>
+		<td class="auto-style1" style="width:48pt" width="64">4</td>
+		<td class="auto-style1" style="width:48pt" width="64">3</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">207A21A</td>
+		<td class="auto-style1">139</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1816024</td>
+		<td class="auto-style1">106</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1820095</td>
+		<td class="auto-style1">103</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">204A21A</td>
+		<td class="auto-style1">97</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">212C21A</td>
+		<td class="auto-style1">86</td>
+		<td class="auto-style1">36</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">2</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD955</td>
+		<td class="auto-style1">67</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD985</td>
+		<td class="auto-style1">58</td>
+		<td></td>
+		<td class="auto-style1">3</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD975</td>
+		<td class="auto-style1">56</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">3</td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD974</td>
+		<td class="auto-style1">47</td>
+		<td></td>
+		<td class="auto-style1">3</td>
+		<td class="auto-style1">4</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XE393</td>
+		<td class="auto-style1">44</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1816027</td>
+		<td class="auto-style1">30</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">205C21A</td>
+		<td class="auto-style1">30</td>
+		<td class="auto-style1">14</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD986</td>
+		<td class="auto-style1">27</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">209A21A</td>
+		<td class="auto-style1">19</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">212A21A</td>
+		<td class="auto-style1">19</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">204B21A</td>
+		<td class="auto-style1">15</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">211A21A</td>
+		<td class="auto-style1">15</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C16-01</td>
+		<td class="auto-style1">15</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">210A21A</td>
+		<td class="auto-style1">14</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C11-01</td>
+		<td class="auto-style1">14</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C11-05</td>
+		<td class="auto-style1">13</td>
+		<td></td>
+		<td class="auto-style1">3</td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C17-05</td>
+		<td class="auto-style1">11</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1821288</td>
+		<td class="auto-style1">10</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">203A21A</td>
+		<td class="auto-style1">10</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XE395</td>
+		<td class="auto-style1">10</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XE426</td>
+		<td class="auto-style1">10</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C16-04</td>
+		<td class="auto-style1">9</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C18-01</td>
+		<td class="auto-style1">9</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XE423</td>
+		<td class="auto-style1">9</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">206A21A</td>
+		<td class="auto-style1">8</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C10-01</td>
+		<td class="auto-style1">8</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C10-05</td>
+		<td class="auto-style1">8</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C17-03</td>
+		<td class="auto-style1">8</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C10-03</td>
+		<td class="auto-style1">7</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">209C21A</td>
+		<td class="auto-style1">6</td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C16-05</td>
+		<td class="auto-style1">6</td>
+		<td></td>
+		<td class="auto-style1">2</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C18-05</td>
+		<td class="auto-style1">6</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ABZ5320</td>
+		<td class="auto-style1">6</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213021A</td>
+		<td class="auto-style1">5</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1101</td>
+		<td class="auto-style1">5</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C11-02</td>
+		<td class="auto-style1">5</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1105</td>
+		<td class="auto-style1">5</td>
+		<td></td>
+		<td class="auto-style1">2</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C16-03</td>
+		<td class="auto-style1">5</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ACA5775</td>
+		<td class="auto-style1">5</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">3</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XE389</td>
+		<td class="auto-style1">5</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">2</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">#XD974</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C10-02</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C11-04</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C13-01</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C17- 05</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XE430</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">2</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">042A21A</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">205A21A</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">212C1A</td>
+		<td class="auto-style1">3</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213A21A</td>
+		<td class="auto-style1">3</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213C214</td>
+		<td class="auto-style1">3</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21c11</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C11-03</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C13-05</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C14-02</td>
+		<td class="auto-style1">3</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C19-02</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">231C21A</td>
+		<td class="auto-style1">3</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ACA4541</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td class="auto-style1">2</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">043A21A</td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1808980</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1808982</td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1821286</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1821287</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1822811</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">201A21A</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">202A21A</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">205621A</td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">206C21A</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">208A21A</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21321A</td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213C12A</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213C2A</td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213C2IA</td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213CIA</td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C10</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C10-04</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1302</td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C14-01</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C14-04</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ABZ 5320</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ABZ8356</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ACA5777</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ACA6111</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ACA6114</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">J07BX03</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ORG-100001417</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD21C18-04</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XE 393</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XE444</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">#21C10-05</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">000955XV2</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">041A21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">041A2A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">04321A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">09631A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1.05286E+14</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">100001417</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">106033JJJ</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">113675J6</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">117049</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1-213C21A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">13061</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">13C21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1800095</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1805020</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1808609</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1808978</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1808986</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1816022</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">182006</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1822788</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1822804</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">2011421A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">203A211A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">203AZIA</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">2050214</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">205021A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">205024</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">205C</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">205C81A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">206az1a</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">2081A211A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">2091A21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">209A214</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">209AZ1A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">209C2IA</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">209CZ1A 
+		101621</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">20F08-09</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">20fo8-09</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">20G1 2-02</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">20SC21A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">210076</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">2101105 or 8<span style="mso-spacerun:yes">&nbsp;
+		</span>n</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21018-04</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">211C21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">211D21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21201A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">212C12A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">212C21 A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">212C221A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">212C2IA</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">212CZ1A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">212CZ21A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">2132A1A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">2132C21A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213621A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213A 21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213C</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213C 214</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213C21</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213c212</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213C219</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">
+		213C21AL2021060</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213C22A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213C2A1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213c2la</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">213D21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">218C21A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21BC21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C 10-05</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C010</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C10/03</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C10-0</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C10-001</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1001</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1003</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1004</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1005</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C11 05</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C110-02</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1103</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1303</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1305</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1401</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C14-03</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C14-05</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1601</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C16-02</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1603</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1605</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C16-1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C17-02</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1703</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C17-04</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1801</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C1803</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C18-03</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C18-04</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C19-01</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C19-2</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21C2IA</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21COV-05</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21DR21002</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21e10-05</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21E1105</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21OA21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">21XD11-05</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">2212C21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">221C21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">2317218</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">28-Jul-21</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">2BC21A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">2ICI8-03</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">3003183</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">4381228</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">4382350</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">4382357</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">4382387</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">43C21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">816024</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">
+		A0P09000003UZS9</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">AB25320</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">AB75320</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">
+		abz5320/31-05-2</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ACA 5775</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ACA5778</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">
+		B#21210502#205</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Batch 1 
+		23C21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">C13C21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">C1901</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">C202105063</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">C21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">C9CRELHYPXLX</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">CJMYL</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">CJmyL444X9uc</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">COVG21040177</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EU201525</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FE4728</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ISO 2072</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">J07BC03</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">L202106036</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">L209521A</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">LD986</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">LOT XD975</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ORG1417</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">PAA1659940</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">R12C21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">SDCC8</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">SIOUFFI</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">X 939</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD 955</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD 974</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD 985</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD 986</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD957</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD958</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD965</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD-974</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XD975X</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XDC86</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XE4223</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XE985</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">XO975</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ZD6A21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+
+
+</P>
+
+
+
+<!-- NOT FOUND -->
+<b><font color="red">
+YOUR BATCH IS NOT FOUND.<br> YOUR BATCH IS NOT IN THE 2000 MOST TOXIC </font></b>
+
+
+
+
+
+
+<P>Created by Craig Paardekooper &#169;2021</P>
+</BODY>
+</HTML>

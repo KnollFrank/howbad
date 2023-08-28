@@ -1,0 +1,280 @@
+<HTML>
+
+
+<!-- 1. Creator -->
+
+<HEAD>
+<!--Created by Craig Paardekooper &#169;(2021)-->
+</HEAD>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<!--  2. STYLES-->
+
+<style type="text/css">
+body {
+    font: normal 14px Verdana, Arial, sans-serif;
+}
+
+table {
+            border-spacing: 0px;
+            table-layout: fixed;
+            margin-left: auto;
+            margin-right: auto;
+        }
+.auto-style1 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: left;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+
+.auto-style3 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+.auto-style4 {
+	background-color: #FFFF00;
+}
+.auto-style5 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background-color: #FFFF00;
+}
+
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+
+.success {color: green;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
+</style>
+
+
+
+
+<!--3.  BROWSER TITLE -->
+
+<TITLE>Donations
+</TITLE>
+
+
+
+
+<!--4. JAVA SCRIPT SEARCH FUNCTION -->
+
+<script>
+function searchSname() {
+    var input, filter, found, table, tr, td, i, j;
+var targetId = "";
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                found = true;
+targetId = td[j].parentNode.id;
+td[j].style.backgroundColor = "yellow";
+document.getElementById(targetId).scrollIntoView();
+
+         break;
+
+            } 
+        }
+        if (found) {
+            tr[i].style.display = "";
+            found = false;
+
+        } else {
+            tr[i].style.display = "none";
+
+        }
+    }
+}
+
+
+
+
+function refresh() {
+    var input;
+
+    input = document.getElementById("myInput");
+if (input.value.length == 0){
+reloadpage();
+
+} 
+}
+
+
+<!--5.  JAVASCRIPT RELOAD PAGE FUNCTION -->
+
+function reloadpage(){
+window.location.href = window.location.href;
+document.getElementById("myInput").focus();
+document.getElementById("myInput").select();
+
+
+
+}
+
+
+
+
+<!--  JAVASCRIPT SET LABEL TEXT -->
+function notfound() {
+document.getElementById('label1').innerHTML = 'Your batch code is not in the top 1000 most toxic';
+}
+</script>
+
+
+
+
+<BODY>
+
+
+
+
+
+
+
+
+
+<!-- 7. SUB HEADING -->
+
+<FONT FACE="arial,verdana,helvetica" size="+2" color="black">
+<b>Please Donate </b></font><br><br>
+
+
+<!-- NAVIGATION BAR -->
+
+<p>
+<font size="-1">
+<a href="index.html">home</a>&emsp;| &emsp;
+<a href="boosters.html">Booster Warnings by Month</a>&emsp; | &emsp;
+<a href="moderna.html">Moderna</a>&emsp; | &emsp;
+<a href="pfizer.html">Pfizer</a>&emsp; | &emsp;
+<a href="janssen.html">Janssen</a>&emsp; | &emsp;
+<a href="modernaforeigndeaths.html">Moderna (outside USA)</a>&emsp; | &emsp;
+<a href="pfizerforeigndeaths.html">Pfizer (outside USA)</a>&emsp; | &emsp;
+<a href="janssenforeigndeaths.html">Janssen (outside USA)</a>&emsp; | &emsp;
+<a href="combined.html">Severe</a>&emsp; | &emsp;
+<a href="symptom.html">Symptom</a>&emsp; | &emsp;
+<a href="recovery.html" target="_blank">Treatment</a>&emsp; | &emsp;
+<a href="children.html">Children</a>&emsp; | &emsp;
+<a href="clusters.html">Clusters</a>&emsp; | &emsp;
+<a href="allnothing.html">All or Nothing</a>&emsp; | &emsp;
+<a href="time.html">Time till onset</a>&emsp; | &emsp;
+<a href="gender.html">Gender</a>&emsp; | &emsp;
+<a href="geography.html">Geography</a>&emsp; | &emsp;
+<a href="states.html">States</a>&emsp; | &emsp;
+<a href="connections.html">Causality</a>&emsp; | &emsp;
+<a href="recallsjapan.html">Japan</a>&emsp; | &emsp;
+<a href="sweden.html">Sweden</a>&emsp; | &emsp;
+<a href="video.html">Video Library</a>&emsp; | &emsp;
+<a href="casereports.html">Case Reports</a>&emsp; | &emsp;
+
+<a href="lotsize.html">Lot Sizes</a>&emsp; | &emsp;
+<a href="expiry.html">Lot Expiry Dates</a>&emsp; | &emsp;
+<a href="whistle.html">Whistle Blowers</a>&emsp; | &emsp;
+<a href="datacleaning.html">Data Cleaning</a>&emsp; | &emsp;
+<a href="background.html">Background</a>&emsp; | &emsp;
+<a href="craig.zip" >Download Source Code</a>&emsp; | &emsp;
+<a href="donatecreditcard.html">Donate</a>
+</font></p><br>
+
+<P><B><font color="red">If this site is slow loading that's because over 1 million  people are accessing it right now. Please use auxillary site <a href="https://www.howbadismybatch.com">HowBadisMyBatch.com<a> which has been set up to cope with this overload. Thankyou.</font></b></p><br>
+
+
+
+
+
+<p>I am very happy to work full time in providing important information to the public, despite the fact that this work comes with its own dangers, and means I have to work off-grid. Please help support my ongoing research - <br>Craig Paardekooper </p><br>
+
+<p><b>Contribute Money</b></p>
+
+<p>Money will go towards - 
+<ul>
+<li>Web Hosting</li><br>
+<li>Data gathering and analysis</li><br>
+<li>Continuous updating of this resource - the latest batch releases and their relative toxicity</li><br>
+<li>Video and educational content</li><br>
+<li>Legal support - providing support for ongoing legal cases where vaccine mandates are being challenged on the grounds of variation / adulteration of the vaccine contents</li><br>
+</ul></p>
+<p>My intention is to continue with my work regardless of my circumstances. It is vital that doctors, nurses and members of the public have easy access to check relative batch toxicity, and it is vital that this information be kept up-to-date, so they can see current trends, and identify bad batches as they emerge, before they can cause too much harm.</P><br>
+
+<P><a href="https://www.paypal.com/donate/?hosted_button_id=QLLR4XPHVUFFS">Donate</a></P><br>
+
+<p><b>Contribute Skills and Effort</b></p>
+<p>If you are interested in offering your analytical abilities in supporting this effort, then please email me. <a href="covid.science@yahoo.com">covid.science@yahoo.com</a></p><br>
+
+
+<p>People skilled in </p>
+
+<ul>
+<li>Excel</li><br>
+<li>R</li><br>
+<li>Statistics</li><br>
+<li>Computer programming/ software development</li><br> 
+<li>Web design</li><br>
+<li>or those with an intuitive grasp of pattern recognition</li>
+</ul>
+<p>are always welcome.</p><br>
+
+
+<p><b>Contribute Time</b></p>
+<p>Please share this app with as many people as you can on social media, or by email, or even by text. In doing so you will be raising awareness of vaccine variability, and promoting greater informed consent.</p>
+
+<p><a href="https://www.paypal.com/donate/?hosted_button_id=QLLR4XPHVUFFS">Donate</a></p><br><br>

@@ -1,0 +1,208 @@
+<HTML>
+
+
+<!-- 1. Creator -->
+
+<HEAD>
+<!--Created by Craig Paardekooper &#169;(2021)-->
+</HEAD>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<!--  2. STYLES-->
+
+<style type="text/css">
+body {
+    font: normal 14px Verdana, Arial, sans-serif;
+}
+.auto-style1 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: left;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+
+.auto-style3 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+.auto-style4 {
+	background-color: #FFFF00;
+}
+.auto-style5 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background-color: #FFFF00;
+}
+
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+
+.success {color: green;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
+</style>
+
+
+
+
+<!--3.  BROWSER TITLE -->
+
+<TITLE>
+Data Cleaning
+</TITLE>
+<body style="font-family:'Verdana'" size="-1">
+
+
+<body style="font-family:'Verdana'" size="-1">
+
+
+
+<!-- 7. SUB HEADING -->
+
+<p><FONT FACE="arial,verdana,helvetica" size="+2" color="black">
+<b>Data Cleaning</b></font></p>
+
+
+<!-- NAVIGATION BAR -->
+
+<p>
+<font size="-1">
+<a href="index.html">home</a>&emsp;| &emsp;
+<a href="boosters.html">Booster Warnings by Month</a>&emsp; | &emsp;
+<a href="moderna.html">Moderna</a>&emsp; | &emsp;
+<a href="pfizer.html">Pfizer</a>&emsp; | &emsp;
+<a href="janssen.html">Janssen</a>&emsp; | &emsp;
+<a href="modernaforeigndeaths.html">Moderna (outside USA)</a>&emsp; | &emsp;
+<a href="pfizerforeigndeaths.html">Pfizer (outside USA)</a>&emsp; | &emsp;
+<a href="janssenforeigndeaths.html">Janssen (outside USA)</a>&emsp; | &emsp;
+<a href="combined.html">Severe</a>&emsp; | &emsp;
+<a href="symptom.html">Symptom</a>&emsp; | &emsp;
+<a href="recovery.html" target="_blank">Treatment</a>&emsp; | &emsp;
+<a href="children.html">Children</a>&emsp; | &emsp;
+<a href="clusters.html">Clusters</a>&emsp; | &emsp;
+<a href="allnothing.html">All or Nothing</a>&emsp; | &emsp;
+<a href="time.html">Time till onset</a>&emsp; | &emsp;
+<a href="gender.html">Gender</a>&emsp; | &emsp;
+<a href="geography.html">Geography</a>&emsp; | &emsp;
+<a href="states.html">States</a>&emsp; | &emsp;
+<a href="connections.html">Causality</a>&emsp; | &emsp;
+<a href="recallsjapan.html">Japan</a>&emsp; | &emsp;
+<a href="sweden.html">Sweden</a>&emsp; | &emsp;
+<a href="video.html">Video Library</a>&emsp; | &emsp;
+<a href="casereports.html">Case Reports</a>&emsp; | &emsp;
+
+<a href="lotsize.html">Lot Sizes</a>&emsp; | &emsp;
+<a href="expiry.html">Lot Expiry Dates</a>&emsp; | &emsp;
+<a href="whistle.html">Whistle Blowers</a>&emsp; | &emsp;
+<a href="datacleaning.html">Data Cleaning</a>&emsp; | &emsp;
+<a href="background.html">Background</a>&emsp; | &emsp;
+<a href="craig.zip" >Download Source Code</a>&emsp; | &emsp;
+<a href="donatecreditcard.html">Donate</a>
+</font></p><br>
+
+<P><B><font color="red">If this site is slow loading that's because over 1 million people are accessing it right now. Please use auxillary site <a href="https://www.howbadismybatch.com">HowBadisMyBatch.com<a> which has been set up to cope with this overload. Thankyou.</font></b></p><br>
+
+
+<p><b>Method of obtaining data from VAERS</b></p>
+
+<p>
+<ol>
+<li>Data tables are downloaded from VAERS by going to this site - https://vaers.hhs.gov/data/datasets.html? I usually download the zip file which contains all the other files</li><br>
+<li>I extract the files</li><br>
+<li>I open the main table (the largest one that contains the DIED, LIFE THREAT, and DISABLED COLUMNS)</li><br>
+<li>I click on data --> Get Data --> From File --> From Text/CSV, and I choose the batches table (the small one containing all the lot numbers)</li><br>
+<li>I make sure that both the main table and the batches table are in table format</li><br>
+<li>I import the lot numbers from column 4 of the batches table to an empty column of the main table using "=vLookup(A2m,BatchesTable, 4, FALSE)"</li><br>
+<li>I import the manufacturer from column 8 of the batches table to an empty column of the main table using "=vLookup(A2m,BatchesTable, 8, FALSE)"</li><br>
+<li>Then I filter the manufacturer column for a particular manufactuer e.g. Pfizer</li><br>
+<li>Then I copy the following columns from the main table LOT NUMBER, DIED, LIFE THREATENING, DISABLED using Ctrl C and paste all columns into a new workbook. </li><br>
+<li>Then I select all of the LOT column using Ctrl Space</li><br>
+<li>Then I replace all spaces in the LOT column using Ctrl H. I alo remove any # characters and hyphens. Note that VAERS counts EN 6200 and EN6200 as two different batches, so this procedure increases the count for EN6200. Thats why VAERS CDC wonder gives a slightly lower count. My count is much more accurate. Further cleaning can be done by removing any lots that are not in the format of two letters followed by 4 digits (which is the standard format)</li><br>
+<li>Once that data is cleaner, I create a pivot table for the purpose of counting the number of adverse reactions (ADRs), deaths, disabilities and life threatening illnesses for each batch</li><br>
+</ol>
+</p><br>
+<p>Please note that by cleaning the data I obtain higher counts than if I don't clean the data. CDC WONDER DOES NOT clean the data. My figures are therefore more accurate. However, CDC WONDER will still agree approximately with my figures, especially with regard to the general order of "toxicity" of the lots</P>
+<p>To double check that the vLookup transfer was accurate, I take just the batches table on its own and filter for the manufacturer. Then create a pivot table from just the LOTS column. This will give me the number of adverse reactions for each batch. This should agree exactly with the number of adverse reactions after using the above procedure with vLookup.</p>
+
+<p>I hope the above clarifies my procedure, and enables others to replicate my results. Later, I will create a more comprehensive method of cleaning the data, and outline each of the steps involved in cleaning</p><br>
+
+<a href="https://www.bitchute.com/video/oniRonjVv42h/" target="_blank">VIDEO : Extracting non-domestic data from VAERS - the steps I took</a><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><b>Click to download spreadsheet</b></p><br>
+<p>
+<ul>
+<li><a href="texas-moderna-j.xlsx">Texas - Moderna - J Category</a></li><br>
+<li><a href="texas-moderna-k.xlsx">Texas - Moderna - K Category</a></li><br>
+<li><a href="texas-moderna-l.xlsx">Texas - Moderna - L Category</a></li><br>
+<li><a href="texas-moderna-all-pre-clean.xlsx">Texas - Moderna - All Categories - Pre-clean</a></li>
+</ul>
+</p>
+
+
+</body>
+</html>
+
+

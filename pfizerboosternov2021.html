@@ -1,0 +1,3248 @@
+<HTML>
+
+
+<!-- 1. Creator -->
+
+<HEAD>
+<!--Created by Craig Paardekooper &#169;(2021)-->
+</HEAD>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<!--  2. STYLES-->
+
+<style type="text/css">
+body {
+    font: normal 14px Verdana, Arial, sans-serif;
+}
+table {
+            border-spacing: 0px;
+            table-layout: fixed;
+            margin-left: auto;
+            margin-right: auto;
+        }
+.auto-style1 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: left;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+
+.auto-style3 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+.auto-style4 {
+	background-color: #FFFF00;
+}
+.auto-style5 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background-color: #FFFF00;
+}
+
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+
+.success {color: green;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
+</style>
+
+
+
+
+<!--3.  BROWSER TITLE -->
+
+<TITLE>Booster Warnings November 2021 Pfizer
+</TITLE>
+
+
+
+
+<!--4. JAVA SCRIPT SEARCH FUNCTION -->
+
+<script>
+function searchSname() {
+    var input, filter, found, table, tr, td, i, j;
+var targetId = "";
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                found = true;
+targetId = td[j].parentNode.id;
+td[j].style.backgroundColor = "yellow";
+document.getElementById(targetId).scrollIntoView();
+
+         break;
+
+            } 
+        }
+        if (found) {
+            tr[i].style.display = "";
+            found = false;
+
+        } else {
+            tr[i].style.display = "none";
+
+        }
+    }
+}
+
+
+
+
+function refresh() {
+    var input;
+
+    input = document.getElementById("myInput");
+if (input.value.length == 0){
+reloadpage();
+
+} 
+}
+
+
+<!--5.  JAVASCRIPT RELOAD PAGE FUNCTION -->
+
+function reloadpage(){
+window.location.href = window.location.href;
+document.getElementById("myInput").focus();
+document.getElementById("myInput").select();
+
+
+
+}
+
+
+
+
+<!--  JAVASCRIPT SET LABEL TEXT -->
+function notfound() {
+document.getElementById('label1').innerHTML = 'Your batch code is not in the top 1000 most toxic';
+}
+</script>
+
+
+
+
+<BODY>
+
+
+
+
+
+
+
+
+
+<!-- 7. SUB HEADING -->
+
+<FONT FACE="arial,verdana,helvetica" size="+2" color="black">
+<b>Booster Warnings </b></font><br><br>
+
+
+!-- NAVIGATION BAR -->
+
+<p>
+<font size="-1">
+<a href="index.html">home</a>&emsp;| &emsp;
+<a href="boosters.html">Booster Warnings by Month</a>&emsp; | &emsp;
+<a href="moderna.html">Moderna</a>&emsp; | &emsp;
+<a href="pfizer.html">Pfizer</a>&emsp; | &emsp;
+<a href="janssen.html">Janssen</a>&emsp; | &emsp;
+<a href="modernaforeigndeaths.html">Moderna (outside USA)</a>&emsp; | &emsp;
+<a href="pfizerforeigndeaths.html">Pfizer (outside USA)</a>&emsp; | &emsp;
+<a href="janssenforeigndeaths.html">Janssen (outside USA)</a>&emsp; | &emsp;
+<a href="combined.html">Severe</a>&emsp; | &emsp;
+<a href="symptom.html">Symptom</a>&emsp; | &emsp;
+<a href="recovery.html" target="_blank">Treatment</a>&emsp; | &emsp;
+<a href="children.html">Children</a>&emsp; | &emsp;
+<a href="clusters.html">Clusters</a>&emsp; | &emsp;
+<a href="allnothing.html">All or Nothing</a>&emsp; | &emsp;
+<a href="time.html">Time till onset</a>&emsp; | &emsp;
+<a href="gender.html">Gender</a>&emsp; | &emsp;
+<a href="geography.html">Geography</a>&emsp; | &emsp;
+<a href="states.html">States</a>&emsp; | &emsp;
+<a href="connections.html">Causality</a>&emsp; | &emsp;
+<a href="recallsjapan.html">Japan</a>&emsp; | &emsp;
+<a href="sweden.html">Sweden</a>&emsp; | &emsp;
+<a href="video.html">Video Library</a>&emsp; | &emsp;
+<a href="casereports.html">Case Reports</a>&emsp; | &emsp;
+
+<a href="lotsize.html">Lot Sizes</a>&emsp; | &emsp;
+<a href="expiry.html">Lot Expiry Dates</a>&emsp; | &emsp;
+<a href="whistle.html">Whistle Blowers</a>&emsp; | &emsp;
+<a href="datacleaning.html">Data Cleaning</a>&emsp; | &emsp;
+<a href="background.html">Background</a>&emsp; | &emsp;
+<a href="craig.zip" >Download Source Code</a>&emsp; | &emsp;
+<a href="donatecreditcard.html">Donate</a>
+</font></p><br>
+
+
+<P><B><font color="red">If this site is slow loading that's because over 1 million people are accessing it right now. Please use auxillary site <a href="https://www.howbadismybatch.com">HowBadisMyBatch.com<a> which has been set up to cope with this overload. Thankyou.</font></b></p><br>
+
+
+
+
+<!-- 8. WARNING -->
+
+<Font color="red" size="-1"><p><b>Health Warning : </b><br><br>
+
+<p>Booster shots are now being deployed. Here are the latest updates from VAERS showing which booster shots are associated with the most harm.</p>
+
+
+<b>Check out your Pfizer booster batch code </b>&emsp;<font size="-2">(last updated 29th December 2021)</font></P>
+
+
+
+
+<!-- 9. INPUT BATCH CODE -->
+
+<form id="searchForm" action="javascript:search();">
+   <div class="input-group">
+      
+      <input type="text" autofocus="autofocus" id='myInput' onkeyup='searchSname()'  oninput='refresh()'  placeholder="Enter Pfizer Batch Code"> 
+
+
+
+<button id="reload" class="btn btn-default" type="button" 
+              onclick="reloadpage();">Clear
+      </button>  &emsp;&emsp;<a href="donatecreditcard.html"><b>Donate</b></a>
+   </div>
+</form>
+<p><br>
+
+
+
+
+
+
+
+
+<!-- 11. TABLE OF PFIZER BOOSTER BATCH CODES NOV 2021 -->
+
+<P>
+<table id="Header" border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:800pt" width="800">
+	
+	<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:800pt" width="800">
+	<colgroup>
+		<col span="3" style="width:48pt" width="64" />
+		<col style="mso-width-source:userset;mso-width-alt:4212;width:91pt" width="121" />
+		<col style="mso-width-source:userset;mso-width-alt:6353;width:137pt" width="182" />
+	</colgroup>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt; width: 105pt">
+		BATCH</td>
+		<td class="auto-style1" style="width: 48pt" width="64">ADRs</td>
+		<td class="auto-style1" style="width: 48pt" width="64">DEATHS</td>
+		<td class="auto-style1" style="width: 91pt" width="121">DISABILITIES</td>
+		<td class="auto-style1" style="width: 137pt" width="182">HOSPITAL</td>
+	</tr>
+</table>
+
+<table id='myTable'  border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:800pt" width="800">
+	<colgroup>
+		<col span="3" style="width:48pt" width="64" />
+		<col style="mso-width-source:userset;mso-width-alt:4212;width:91pt" width="121" />
+		<col style="mso-width-source:userset;mso-width-alt:6353;width:137pt" width="182" />
+	</colgroup>
+	
+
+<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FK5127</td>
+		<td class="auto-style1">727</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">15</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FK5618</td>
+		<td class="auto-style1">431</td>
+		<td></td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">8</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ff8841</td>
+		<td class="auto-style1">291</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">3</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fh8027</td>
+		<td class="auto-style1">244</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">5</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ1620</td>
+		<td class="auto-style1">241</td>
+		<td></td>
+		<td class="auto-style1">4</td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fh8030</td>
+		<td class="auto-style1">237</td>
+		<td class="auto-style1">5</td>
+		<td class="auto-style1">3</td>
+		<td class="auto-style1">5</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH8028</td>
+		<td class="auto-style1">227</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">3</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FG3527</td>
+		<td class="auto-style1">216</td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">3</td>
+		<td class="auto-style1">6</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH8020</td>
+		<td class="auto-style1">209</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">32030BD</td>
+		<td class="auto-style1">138</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF2593</td>
+		<td class="auto-style1">129</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">3</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Ff2590</td>
+		<td class="auto-style1">99</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">2</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ8757</td>
+		<td class="auto-style1">85</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FE3590</td>
+		<td class="auto-style1">76</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fj1611</td>
+		<td class="auto-style1">68</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td class="auto-style1">2</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">33030BD</td>
+		<td class="auto-style1">64</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ8762</td>
+		<td class="auto-style1">63</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FD0809</td>
+		<td class="auto-style1">62</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">4</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FL0007</td>
+		<td class="auto-style1">61</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">330308D</td>
+		<td class="auto-style1">60</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">320308d</td>
+		<td class="auto-style1">51</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fe3594</td>
+		<td class="auto-style1">38</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF2587</td>
+		<td class="auto-style1">36</td>
+		<td></td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">2</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">330268D</td>
+		<td class="auto-style1">34</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">30155BA</td>
+		<td class="auto-style1">33</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">33026BD</td>
+		<td class="auto-style1">32</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF8839</td>
+		<td class="auto-style1">28</td>
+		<td></td>
+		<td class="auto-style1">2</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">30145BA</td>
+		<td class="auto-style1">23</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF2589</td>
+		<td class="auto-style1">22</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0173</td>
+		<td class="auto-style1">21</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0191</td>
+		<td class="auto-style1">17</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Fe3592</td>
+		<td class="auto-style1">17</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EN6208</td>
+		<td class="auto-style1">14</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0172</td>
+		<td class="auto-style1">14</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FD7218</td>
+		<td class="auto-style1">14</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">unknown</td>
+		<td class="auto-style1">14</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">5</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">301558A</td>
+		<td class="auto-style1">13</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">33130BA</td>
+		<td class="auto-style1">12</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ff2588</td>
+		<td class="auto-style1">12</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0217</td>
+		<td class="auto-style1">11</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">2</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">30135BA</td>
+		<td class="auto-style1">10</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FC3183</td>
+		<td class="auto-style1">10</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ew0179</td>
+		<td class="auto-style1">8</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">331308A</td>
+		<td class="auto-style1">7</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0187</td>
+		<td class="auto-style1">7</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0196</td>
+		<td class="auto-style1">7</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FK5217</td>
+		<td class="auto-style1">7</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">3302680</td>
+		<td class="auto-style1">6</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0176</td>
+		<td class="auto-style1">6</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0177</td>
+		<td class="auto-style1">6</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0183</td>
+		<td class="auto-style1">6</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FC3184</td>
+		<td class="auto-style1">6</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fl3197</td>
+		<td class="auto-style1">6</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">3203080</td>
+		<td class="auto-style1">5</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">3303080</td>
+		<td class="auto-style1">5</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">6023860</td>
+		<td class="auto-style1">5</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">30130BA</td>
+		<td class="auto-style1">5</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">59267-1000-01</td>
+		<td class="auto-style1">5</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0185</td>
+		<td class="auto-style1">5</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F63527</td>
+		<td class="auto-style1">5</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">8030</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">2</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">301155BA</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Ew0164</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0167</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0175</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ew0186</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FK1527</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FK2157</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FK5168</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Pfizer</td>
+		<td class="auto-style1">4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">301458A</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">330258D</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">33025BD</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EN6200</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EN6202</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">2</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EWO176</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FC3181</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fc33183</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FD0810</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ff&nbsp;2593</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FK 5127</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FK127</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FKS127</td>
+		<td class="auto-style1">3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">027H21B</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">30230BD</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">330308A</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EL9261</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EN6201</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0162</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0165</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0171</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0178</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0182</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0198</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW1087</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F51611</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FC3182</td>
+		<td class="auto-style1">2</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FD8448</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FE3950</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FG 3527</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FG3257</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH 8027</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH 8030</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FK5127-H</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fn8030</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FS8757</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">PH8030</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">rh8030</td>
+		<td class="auto-style1">2</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">0</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1620</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">5618</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">15226</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">330308</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">330380</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">394588</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">552590</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">939909</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1855191</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">3015508</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">3303020</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">3303081</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">3303090</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">5.93E+10</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">#EW0187</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">#FF2593</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">#FH8020</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">.</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">?</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">00303BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">012H21B</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">013f21a</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">03230bd</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">033025BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">033030BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">061e21a</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">067H21A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">0812966-10062</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">1208600-1285</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">2122FJ1611</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">300308D</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">301258A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">30135BZ</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">30145CA</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">30155BA1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">3030BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">32 0308 D</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">320030BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">32003BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">320305D</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">32030BC</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">32030BP</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">32030BS</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">32038D</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">3203BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">320bd</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">322030BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">32D308N</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">33020BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">33026 BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">330268D 
+		Pfizer</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">33026FD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">330-3080D</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">330308BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">330308D 2/22</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">330308P</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">33030B0</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">33038RD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">33038TD11</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">3303BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">3306BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">331268D</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">3P3TY</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">59267-1055-01</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">
+		6483899111301B</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">6TFK5127</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">7G3527</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">B0125BA</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">BNT162b2</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Booster</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Covid19</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">CVS7182</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">D12LGGI</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">E100202</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EF3590</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EJ1620</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EJ1685</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ek5127</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EK5730</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EL1284</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EL3247</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EL3249</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EM9809</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EN6204</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EN6205</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EP7533</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ER2613</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ER8729</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">er8730</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ER8732</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ER8733</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ET1686</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ET8757</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW 0168</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ew 0172</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW 0177</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW 0202</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0151</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0153</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0158</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0168</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0169</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0170</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ew017z</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW0202</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW043</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW1086</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EW1096</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Ew175</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EWD185</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EWO175</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EWO185-H</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">EWW0196</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F00809</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F21620</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F2593</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F31600</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F373527</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F48020</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F48028</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F51620</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F5618</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F58757</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F62357</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">F63827</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FA 8027</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FA0809</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FA5127</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FA7484</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FC3180</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FC-3527</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Fc8027</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FD 0809</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FD0809XP</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FD0909</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FD809</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FDO805</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FDO809</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FE 3594</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fe3294</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FE35076C21</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FE3562</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FE3954</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fe3980</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FE4590</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FE6592</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF 2590</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF 2593</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF 8841</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF1620</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF2293</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ff2950</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF2953</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF3587</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF4481</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF5109</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ff51227</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF590</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF8027</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ff8028</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td class="auto-style1">1</td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF8030</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ff884</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF88411</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF8844</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF8B39</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FF8P41</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FFE3590</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FFEE39</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Fff2593</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FFF8841</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FFL2590</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FFZ593</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FG2527</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FG3521</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FG35827</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FG3725</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FG8762</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH 8020</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH 8030 or FM</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH08028</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH08030</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Fh0820</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH0827</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH2028</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH2030</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH3080</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Fh3527</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH5020</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH5127</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH8022</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH80247</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH8026</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH80281</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH8029</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH8034</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fh8036</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH8078</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH8082</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH8098</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH8208</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH830</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FH8471</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FHA02A</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FHBO29</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FHO028</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FHP030</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FI8762</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FIC5618</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ 1611</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ 1620</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ0757</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fj1161</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ164</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ1966</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ2593</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ7620</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fj8028</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ8030</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ8756</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fj87-57</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fj8758</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ8760</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ8768</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ87857</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FJ9620</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FK0007</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FK5127 2122</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Fk51271</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fk51274</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FK513\27</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fk5167</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FK5617</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Fk6518</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FKJ618</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FL 0007</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FL00007</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FL0002</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FL0006</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FL007</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">fl3527</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FL5127</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FL70007</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FL8095</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FM80217</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FM8027</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FN8830</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FP0809</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Fp2iCV - 
+		FK5127</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FR2593</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FR5127</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FRI527</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FT5127</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">
+		FT-HRSA-FH8028</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">
+		FT-HRSA-FK5127</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Fx5618</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FZ5127</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">FZ8028</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">GJ1611</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">GlGH8030</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">HE8030</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">HRSAFK5618</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">IH8028</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">KF5127</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">LH8027</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">LHFK5127</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">LOT F58757</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Lot#FH8027</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">n/a</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">N0L0T333</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">NCD: 
+		59267-1000</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">P220395</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">PAA173396</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">PAA173696</td>
+		<td class="auto-style1">1</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">PAA177913</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">PD0809</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">PE3254</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Peds Pfizer 
+		FK5</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Pf33026BD</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">PFI30135BA</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Pfizer 12+</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Pfizer Covid 
+		19</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Pfizer FG 
+		3527</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Pfizer FH8027</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Pfizer FJ1611</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Pfizer Fj1620</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Pfizer FJ8762</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Pfizer KH8027</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">
+		Pfizer-BioNTech</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Pfizerfd7218</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">PfizerFH8027</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">
+		Pfizerfk5127wag</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Ph8020</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">PH8025</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">ph8027</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">PH8028</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Phizzer 
+		ff2590</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">pk5618</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">RH8027</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">SG3527</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td class="auto-style1">1</td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">SH8030</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">SH8033</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">SK5127</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">SS2593</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">TX000999713</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">UNK</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">unk, contact 
+		pt</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="19" style="height:14.5pt">
+		<td class="auto-style1" height="19" style="height: 14.5pt">Unknown 
+		(Possib</td>
+		<td class="auto-style1">1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+
+
+
+</body>
+</html

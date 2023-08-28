@@ -1,0 +1,324 @@
+<HTML>
+
+
+<!-- 1. Creator -->
+
+<HEAD>
+<!--Created by Craig Paardekooper &#169;(2021)-->
+</HEAD>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<!--  2. STYLES-->
+
+<style type="text/css">
+body {
+    font: normal 14px Verdana, Arial, sans-serif;
+}
+table {
+            border-spacing: 0px;
+            table-layout: fixed;
+            margin-left: auto;
+            margin-right: auto;
+        }
+.auto-style1 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: left;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+
+.auto-style3 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+.auto-style4 {
+	background-color: #FFFF00;
+}
+.auto-style5 {
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background-color: #FFFF00;
+}
+
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+
+.success {color: green;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
+</style>
+
+
+
+
+<!--3.  BROWSER TITLE -->
+
+<TITLE>Japan Recalls
+</TITLE>
+
+
+
+
+<!--4. JAVA SCRIPT SEARCH FUNCTION -->
+
+<script>
+function searchSname() {
+    var input, filter, found, table, tr, td, i, j;
+var targetId = "";
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                found = true;
+targetId = td[j].parentNode.id;
+td[j].style.backgroundColor = "yellow";
+document.getElementById(targetId).scrollIntoView();
+
+         break;
+
+            } 
+        }
+        if (found) {
+            tr[i].style.display = "";
+            found = false;
+
+        } else {
+            tr[i].style.display = "none";
+
+        }
+    }
+}
+
+
+
+
+function refresh() {
+    var input;
+
+    input = document.getElementById("myInput");
+if (input.value.length == 0){
+reloadpage();
+
+} 
+}
+
+
+<!--5.  JAVASCRIPT RELOAD PAGE FUNCTION -->
+
+function reloadpage(){
+window.location.href = window.location.href;
+document.getElementById("myInput").focus();
+document.getElementById("myInput").select();
+
+
+
+}
+
+
+
+
+<!--  JAVASCRIPT SET LABEL TEXT -->
+function notfound() {
+document.getElementById('label1').innerHTML = 'Your batch code is not in the top 1000 most toxic';
+}
+</script>
+
+
+
+
+<BODY>
+
+
+
+
+
+
+
+
+
+<!-- 7. SUB HEADING -->
+
+<FONT FACE="arial,verdana,helvetica" size="+2" color="black">
+<b>Japan Recalls</b></font><br><br>
+
+
+<!-- NAVIGATION BAR -->
+
+<p>
+<font size="-1">
+<a href="index.html">home</a>&emsp;| &emsp;
+<a href="boosters.html">Booster Warnings by Month</a>&emsp; | &emsp;
+<a href="moderna.html">Moderna</a>&emsp; | &emsp;
+<a href="pfizer.html">Pfizer</a>&emsp; | &emsp;
+<a href="janssen.html">Janssen</a>&emsp; | &emsp;
+<a href="modernaforeigndeaths.html">Moderna (outside USA)</a>&emsp; | &emsp;
+<a href="pfizerforeigndeaths.html">Pfizer (outside USA)</a>&emsp; | &emsp;
+<a href="janssenforeigndeaths.html">Janssen (outside USA)</a>&emsp; | &emsp;
+<a href="combined.html">Severe</a>&emsp; | &emsp;
+<a href="symptom.html">Symptom</a>&emsp; | &emsp;
+<a href="recovery.html" target="_blank">Treatment</a>&emsp; | &emsp;
+<a href="children.html">Children</a>&emsp; | &emsp;
+<a href="clusters.html">Clusters</a>&emsp; | &emsp;
+<a href="allnothing.html">All or Nothing</a>&emsp; | &emsp;
+<a href="time.html">Time till onset</a>&emsp; | &emsp;
+<a href="gender.html">Gender</a>&emsp; | &emsp;
+<a href="geography.html">Geography</a>&emsp; | &emsp;
+<a href="states.html">States</a>&emsp; | &emsp;
+<a href="connections.html">Causality</a>&emsp; | &emsp;
+<a href="recallsjapan.html">Japan</a>&emsp; | &emsp;
+<a href="sweden.html">Sweden</a>&emsp; | &emsp;
+<a href="video.html">Video Library</a>&emsp; | &emsp;
+<a href="casereports.html">Case Reports</a>&emsp; | &emsp;
+
+<a href="lotsize.html">Lot Sizes</a>&emsp; | &emsp;
+<a href="expiry.html">Lot Expiry Dates</a>&emsp; | &emsp;
+<a href="whistle.html">Whistle Blowers</a>&emsp; | &emsp;
+<a href="datacleaning.html">Data Cleaning</a>&emsp; | &emsp;
+<a href="background.html">Background</a>&emsp; | &emsp;
+<a href="craig.zip" >Download Source Code</a>&emsp; | &emsp;
+<a href="donatecreditcard.html">Donate</a>
+</font></p><br>
+
+
+
+<!-- 8. WARNING -->
+
+<Font color="red" size="-1"><p><b>Recalls in Japan</b></p></font>
+
+<p>On September 1st 2021, Japan suspended use of Covid 19 vaccines following discovery of adulteration of Moderna batches - <a  href="http://www.xinhuanet.com/english/asiapacific/2021-08/29/c_1310155746.htm" target="_blank">(news article)</a>.Though this event received widespread news coverage, the identity of all of the contaminated batches remained secret. My colleagues, members of Team Enigma, made efforts to liase with the Japanese regulators in order to find out more information. They contacted the people they knew - but facts were not forth coming. </p>
+
+<p>Then a few days ago I received information from a contact in Holland.</p>
+<p>Here are the batch codes suspected of being contaminated </p><br>
+
+<P><b>Moderna Lots</b></p><br>
+
+<p><img src="japanadulteration.png" vspace = "0" hspace="0"  ALT="Are some batches more toxic than others?" width="500" height="250" ></img><p><br>
+
+<p>Further information was forth-coming for Moderna, regarding the extreme variation between batches - some batches producing twice the number of side reactions, severe reactions and deaths compared to others.</p><br>
+
+<p><img src="top10modernajapan.png" vspace = "0" hspace="0"  ALT="Are some batches more toxic than others?" width="1000" height="350" ></img><p><br>
+
+<P>As you can see, these lot numbers belong to common mathematical series -</P>
+<p><ul>
+
+<li>3004221, 3004227, 3004228, 2004229</li>
+
+<li>3003182, 3003189, 3003190</li>
+
+<li>3003653, 3003654, 3003656</li>
+
+<li>3002180, 3002181</li>
+</ul>
+
+</P>
+<p>These were not isolated lots, or one-off accidents. They were part of mathematical series of batches - repeatedly distributed.</P><br>
+
+<P><b>Pfizer Lots</b></p>
+
+<P>High variation between Pfizer lots was also apparent - some lots producing 3 x the number of side reactions, 6 x the number of severe reactions, and 2 x the number of deaths </p><br>
+
+<p><img src="top10pfizerjapan.png" vspace = "0" hspace="0"  ALT="Are some batches more toxic than others?" width="1000" height="350" ></img><p><br>
+
+<P>The EY series is particularly bad for causing death-</P>
+<p><ul>
+
+<li>EP9605</li>
+
+<li>ER2659, ER7449, ER9480</li>
+
+<li>ET3674 </li>
+
+<li>EW4811</li>
+
+<li>EX3617</li>
+
+<li>EY2173, EY0779, EY5420, EY4834</li>
+
+<li>FA5765, FA2453</li>
+
+<li>FC3661</li>
+
+
+</ul>
+
+</P><br>
+
+<P><b>Deaths in Japan Following Vaccination</b></p>
+<P>Data is available for 1084 deaths folllowing vaccination in Japan. A downloadable spreadsheet is available below. Deaths are classified by batch number. Some batches are producing 50 x the number of deaths compared to other batches</p><br>
+
+<p><img src="japdeaths.png" vspace = "0" hspace="0"  ALT="Are some batches more toxic than others?" width="300" height="1000" ></img><p><br>
+
+
+
+
+
+
+
+<P><b>Sources</b></p>
+
+<ul>
+<li><a href="https://www.mhlw.go.jp/stf/shingi2/0000208910_00031.html" target="_blank">Japanese databases</a></li><br>
+<li><a href="https://en.side-effect.jp/home/terms" target="_blank">新型コロナワクチン副反応検証サイト</a></li><br>
+<li><a href="https://en.side-effect.jp/patients/decease" target="_blank">Records of Death by Batch Number</a></li><br>
+<li><a href="japandeaths.xlsx" target="_blank">Spreadsheet : Records of Death by Batch Number</a></li><br>
+
+</ul>
+
+
+</body>
+</html
